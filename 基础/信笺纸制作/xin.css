@@ -1,0 +1,61 @@
+@charset "utf-8";
+*{
+	margin:0;
+}
+body{
+	background:url(xin.jpg)no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+	padding:40px;
+	}
+article{
+	width:960px;
+	height:936px;
+	margin:0 auto;
+	background:repeating-linear-gradient(0deg,#ccc 0px,#f4f4f4 1px,#f4f4f4 35px,#ccc 36px);
+	opacity:0.5;
+	position:relative;
+}
+p{
+	line-height:36px;
+	font-size:22px;
+	font-family:"楷体";
+	text-indent:2em;
+}
+h1{
+	text-align:center;
+	line-height:36px;
+}
+section:before{
+	content:""; 
+	width:4px;
+	height:936px;
+	border:1px solid #f2afaf;
+	/*display:line-block;*/
+	position:absolute;
+	left:50px;
+
+
+}
+section{
+	position:relative;
+	padding-left:70px;
+}
+div{
+	width:40px;
+	height:40px;
+	border-radius:20px;
+	background-color:rgba(170,170,170,0.9);
+	
+}
+
+div:nth-child(1){
+	position:absolute;
+	top:200px;
+	left:5px;
+}
+div:nth-child(2){
+	position:absolute;
+	top:550px;
+	left:5px;
+}

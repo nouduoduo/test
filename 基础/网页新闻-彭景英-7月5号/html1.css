@@ -1,0 +1,36 @@
+@charset "utf-8";
+p{
+	text-indent:2em;
+	margin:10px;
+	line-height:50px;
+	font-size:16px;
+}
+body{
+	font-family:"微软雅黑";color:#666;
+}
+h1{
+	font-size:24px;
+	text-align:center;
+}
+h2{
+	font-size:20px;
+}
+h1,h2{
+	width:150px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+div,h1{
+	width:960px; 
+	margin:0 auto;
+}
+span{
+	text-shadow:-1px 2px 2px purple;
+}
+img{
+	border:1px solid blue;
+	width: 940px;
+	padding:5px;
+	height: auto;
+}

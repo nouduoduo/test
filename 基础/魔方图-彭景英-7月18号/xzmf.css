@@ -1,0 +1,100 @@
+@charset "utf-8";
+body{
+	background:url(img/64.jpg) no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+	
+}
+article{
+	width:300px;
+	height:300px;
+	transform-style:preserve-3d;
+	transform:rotateX(30deg) rotateY(30deg);
+	animation-name:resizewidth;
+	animation-duration:15s;
+	animation-timing-function: linear;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: -150px;
+	
+}
+section{
+	width:100%;
+	height:100%;
+	position:absolute;
+	opacity:0.9;
+
+}
+
+.top{
+	background:url(img/00.jpeg);
+	background-size:cover;
+	transform: rotateX(90deg) translateZ(150px);
+
+}
+.bottom{
+	background:url(img/8d.jpg);
+	background-size:cover;
+	transform: rotateX(90deg)  translateZ(-150px);
+}
+.left{
+	background:url(img/39.jpg);
+	background-size:cover;
+	transform: rotateY(90deg) translateZ(-150px);
+
+}
+.right{
+	background:url(img/K8-0.jpg);
+	background-size:cover;
+	
+transform: rotateY(90deg) translateZ(150px);
+
+}
+.li{
+	background:url(img/T.jpeg);
+	background-size:cover;
+	transform:  translateZ(-150px);
+
+}
+.wai{
+	background:url(img/42.jpg);
+	background-size:cover;
+	transform:  translateZ(150px);
+
+}
+
+@keyframes resizewidth{
+	0%{transform:rotateX(30deg) rotateY(30deg);}
+	20%{transform:rotateX(120deg) rotateY( 150deg);}
+	40%{transform:rotateX(210deg) rotateY(270deg);}
+	60%{transform:rotateX(300deg) rotateY(390deg);}
+	80%{transform:rotateX(390deg) rotateY(510deg);}
+	100%{transform:rotateX(480deg) rotateY(630deg);}
+}
+article:hover section{
+	border-radius:150px;
+box-shadow: 0 0 30px #fff;
+}
+article:hover .top{
+transform: rotateX(90deg) translateZ(250px);
+}
+article:hover .bottom{
+	transform: rotateX(90deg)  translateZ(-250px);
+	border-radius:150px;
+}
+article:hover .left{transform: rotateY(90deg) translateZ(-250px);
+	border-radius:150px;
+}
+article:hover .right{transform: rotateY(90deg) translateZ(250px);
+	border-radius:150px;
+}
+article:hover .li{transform:  translateZ(-250px);
+	border-radius:150px;
+}
+article:hover .wai{transform:  translateZ(250px);
+	border-radius:150px;
+}
