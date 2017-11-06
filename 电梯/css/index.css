@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+article{
+    width: 504px;
+    height: 732px;
+    font-size: 0;
+    margin: 0 auto;
+    border: 1px solid #000;
+    position: relative;
+}
+article>section{
+    display: inline-block;
+    width:250px ;
+    height: 732px;
+    border: 1px solid #000;
+}
+section>div{
+    width:250px ;
+    height: 120px;
+    border: 1px solid #000;
+    font-size: 16px;
+}
+section:first-child{
+    position: relative;
+}
+section:last-child{
+     position: absolute;
+     top: 0;
+     right: 0;
+ }
+section:last-child span{
+    display: inline-block;
+    width:30px ;
+    height: 30px;
+    border-radius: 50%;
+    border:1px solid #000;
+}
+.numbercount{
+    text-align: center;
+    position: relative;
+
+}
+.numbercount>div{
+    position: absolute;
+    width: 30px;
+    top: 24px;
+    left: 33px;
+}
+.numbercount>div>span{
+    margin-bottom: 10px;
+}
+article>section .numbercount>span{
+    border: none;
+    margin: 45px 0 45px 0;
+}
+.move{
+    background: url("../img/timg8.jpg");
+    background-size: 250px 120px;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+
+}
+.move>div{
+    background: #000;
+    width: 122px;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+}
+.move>div:first-child{
+    /*left: 0;*/
+}
+.move>div:last-child{
+    right: 0;
+}
+.colorbg{
+    background: #fff;
+}
